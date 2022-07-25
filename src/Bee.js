@@ -9,6 +9,9 @@ var Bee = function() {
 
 //subclass to prototype obj created from parents protype
 Bee.prototype = Object.create(Grub.prototype);
+//^this destroys the default Bee.prototype.constructor
+
+//so we need to recreate it...
 
 //subclass.prototype.cnstructor = subclass constructor
 Bee.prototype.constructor = Bee;
